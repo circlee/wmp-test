@@ -94,7 +94,7 @@ public class AlphaNumericServiceImpl implements AlphaNumericService {
 
         return charStream
                 .filter(makeFilterBuCodition.apply(condition))
-                .filter(genTagFilter.get())
+                //.filter(genTagFilter.get())
                 .filter(AlphaNumericType::isAlphaNumericType)
                 .collect(
                         Collectors.groupingBy(
